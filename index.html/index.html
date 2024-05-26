@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/d8ea5b42ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                <h3><span>Abhishek</span>Potfolio</h3>
+                <ul id="manu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenr()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>UI/UX Designer</p>   -->
+                <h1>Hi,<br>My Name is  <span>Abhishek</span> <br>singh from Jamshedpur</h1>
+                <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer','and','full stack web developer...'],
+      typeSpeed: 50,
+    });
+  </script>
+
+            </div>
+        </div>
+    </div>
+
+<!-- -----------about---------- -->
+<div id="About">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="../image/my  photo.jpeg" >
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab at facere deserunt suscipit quos enim saepe est impedit aliquam nobis, neque incidunt iste nesciunt porro consequuntur, nihil vitae perferendis.</p>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('Education')">Education</p>
+      </div>
+<div class="tab-contents active-tab " id="skills">
+<ul>
+  <li><span>web design</span><br>Desibning web/App imterfaces</li>
+  <li><span>Web Development</span><br>Web app Development</li>
+  <li><span>App Development</span><br>Building Android/ios apps</li>
+</ul>
+</div>
+<div class="tab-contents" id="Experience">
+<ul>
+  <!-- <li><span>2021-current</span><br>UI/UX Design Traunung at ET Institute</li>
+  <li><span>Web Development</span><br>Web app Development</li> -->
+  <li> NO Experience</li>
+</ul>
+</div>
+<div class="tab-contents" id="Education">
+<ul>
+  <li><span>class10</span><br>89.75%</li>
+  <li><span>class12</span><br>72.23%</li>
+  <li><span>graduation</span><br>BCA 2ND Year student from Netaji Subhas University</li>
+</ul>
+</div>
+
+
+
+        </div>
+        </div>
+        
+
+      </div>
+    </div>
+<!-- ----------service---------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed rem aut vitae, facere facilis labore numquam dolore vel cum voluptatum. Cum soluta distinctio perferendis sit porro non corrupti repellat.</P>
+                <a href="#">lear more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Development</h2>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed rem aut vitae, facere facilis labore numquam dolore vel cum voluptatum. Cum soluta distinctio perferendis sit porro non corrupti repellat.</P>
+                <a href="#">lear more</a>
+            </div>
+            <div>
+                <!-- <i class="fa-sharp fa-solid fa-microphone-lines-slash"></i> -->
+                <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+                <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Full stack Web Development</h2>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed rem aut vitae, facere facilis labore numquam dolore vel cum voluptatum. Cum soluta distinctio perferendis sit porro non corrupti repellat.</P>
+                <a href="#">lear more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- --------------my work---------- -->
+
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="../image/work-1.png" >
+                <div class="layer">
+                    <h3>Ecommerce website</h3>
+                    <p>Focus on showcasing your expertise in ecommerce, such as your experience with online marketing, website optimization, inventory management, and customer engagement. To make the most of the limited space, use concise language and bullet points to describe your experience and achievements. Avoid lengthy paragraphs and unnecessary details.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../image/work-2.png" >
+                <div class="layer">
+                    <h3>API based javascript project</h3>
+                    <p>JokeAPI is a REST API that serves uniformly and well formatted jokes.
+                        It can be used without any API token, membership, registration or payment.
+                        It supports a variety of filters that can be applied to get just the right jokes you need.
+                        The usage is very simple and similar to other RESTful APIs and requires only basic knowledge of HTTP requests and JSON, XML, YAML or plain text.
+                        </p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../image/work-3.png" >
+                <div class="layer">
+                    <h3> Online shopping website</h3>
+                    <p>Focus on showcasing your expertise in ecommerce, such as your experience with online marketing, website optimization, inventory management, and customer engagement. To make the most of the limited space, use concise language and bullet points to describe your experience and achievements. Avoid lengthy paragraphs and unnecessary details.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">see more</a>
+
+    </div>
+</div>
+
+
+
+<!-- ------------contect me----------- -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> abhisheksingh61053@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6205371547</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Abvkumarsingh"><i class="fa-brands fa-github"target="_blank"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"target="_blank"></i></a>
+                    <a href="https://www.instagram.com/ra_jputana9856/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-singh-b1ab8b2a8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="../image/my pen cord.pdf" download  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Massage" rows="6" placeholder="your massage"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>Developed <i class="fa-solid fa-address-card"></i>  by Abhishek singh </p>
+</div>
+<script src="../js/script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+</html>
